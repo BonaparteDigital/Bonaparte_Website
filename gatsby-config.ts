@@ -1,5 +1,32 @@
 import type { GatsbyConfig } from "gatsby";
 
+/**
+* The currently active environment.
+* This is used to set the corresponding Tag Manager environment config.
+*/
+const activeEnv =
+ process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+console.log(`Using environment config: '${activeEnv}'`)
+
+// The Tag Manager Container ID.
+const gtmContainerId = "GTM-W2RR2D4M"
+
+/**
+* Tag Manager Environment values to configure gatsby-plugin-google-tagmanager.
+* null values will cause the default (live/production) snippet to load.
+*/
+const gtmEnv = {
+ development: {
+   gtmAuth: "gtm_auth=zpgQPt616uoy5-1SJ9PmKA",
+   gtmPreview: "gtm_preview=env-6",
+ },
+
+ production: {
+   gtmAuth: 'gtm_auth=EYhab9NKz2KAtGLyFfBqcQ',
+   gtmPreview: 'gtm_preview=env-1',
+ },
+}
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Bonaparte`,
@@ -11,33 +38,12 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "GTM-W2RR2D4M",
-  
-        // Include GTM in development.
-        //
-        // Defaults to false meaning GTM will only be loaded in production.
+        id: gtmContainerId,
         includeInDevelopment: false,
-  
-        // datalayer to be set before GTM is loaded
-        // should be an object or a function that is executed in the browser
-        //
-        // Defaults to null
-        defaultDataLayer: { platform: "gatsby" },
-  
-        // Specify optional GTM environment details.
-        gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-        gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        dataLayerName: "YOUR_DATA_LAYER_NAME",
-  
-        // Name of the event that is triggered
-        // on every Gatsby route change.
-        //
-        // Defaults to gatsby-route-change
-        routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
-        // Defaults to false
-        enableWebVitalsTracking: true,
-        // Defaults to https://www.googletagmanager.com
-        selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
+   
+        // GTM environment details.
+        gtmAuth: gtmEnv[activeEnv].gtmAuth,
+        gtmPreview: gtmEnv[activeEnv].gtmPreview,
       },
     },
   ]
