@@ -46,8 +46,15 @@ const config: GatsbyConfig = {
         gtmPreview: gtmEnv[activeEnv].gtmPreview,
       },
     },
-  ]
-  
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.bonapartedigital.com',
+        sitemap: 'https://www.bonapartedigital/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    }
+  ],
 };
 
 export default config;
