@@ -53,7 +53,10 @@ const config: GatsbyConfig = {
         sitemap: 'https://www.bonapartedigital/sitemap.xml',
         policy: [{userAgent: '*', allow: '/'}]
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+    },
   ],
 };
 
