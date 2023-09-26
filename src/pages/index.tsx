@@ -3,7 +3,7 @@ import type { HeadFC, PageProps } from "gatsby"
 
 const Home: React.FC<PageProps> = () => {
   return (
-    <main id='content' className="bg-gradient-to-b from-olive from-50% via-olive via-50% to-green to-100% gradien h-screen flex flex-col justify-center max-w">
+    <main id='content' className="bg-gradient-to-b from-olive from-50% via-olive via-50% to-green to-100% gradient h-screen flex flex-col justify-center max-w">
       <div className="flex flex-col justify-center items-center space-y-6">
         <h1 className="flex flex-col text-4xl font-semibold text-green  items-center">
           <span className="font-mulish-700 text-8xl">BONAPARTE</span>
@@ -14,7 +14,12 @@ const Home: React.FC<PageProps> = () => {
             <a href='https://calendly.com/hellobonaparte/meet-greet'>Book a RDV</a>
           </button>
         </h2>
-      </div>  
+        <div id='SemRush Agency Badge' className="flex flex-col justify-center items-center mt-20">
+          <a href="https://www.semrush.com/agencies/bonaparte/" rel="noreferrer noopener" target="_blank" >
+            <img src="https://static.semrush.com/agency-directory/shared/badge.svg" width="90" height="90" alt="Semrush certified agency partner badge" />
+          </a>
+        </div>
+      </div>
       <footer className="text-gray-400 absolute bottom-0 inset-x-0 text-center py-5">
           <p>Copyrght © {new Date().getFullYear()} Bonaparte</p>
       </footer>
@@ -25,4 +30,9 @@ const Home: React.FC<PageProps> = () => {
 
 export default Home
 
-export const Head: HeadFC = () => <title>Bonaparte | Your Digital Strategist</title>
+export const Head: HeadFC = () => (
+<>
+<title>Bonaparte | Your Digital Strategist</title>
+<meta name="description" content="We're not just a digital marketing agency; we're your strategic partners in world-class branding and digital domination. Forget buzzwords and fluff. We deliver hard-hitting results that last. Ready to conquer?" />
+</>
+)
