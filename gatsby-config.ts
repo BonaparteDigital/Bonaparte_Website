@@ -50,7 +50,7 @@ const config: GatsbyConfig = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.bonapartedigital.com',
-        sitemap: 'https://www.bonapartedigital/sitemap.xml',
+        sitemap: 'https://www.bonapartedigital/sitemap-0.xml',
         policy: [{userAgent: '*', allow: '/'}]
       }
     },
