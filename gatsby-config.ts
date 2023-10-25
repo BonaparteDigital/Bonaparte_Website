@@ -30,7 +30,7 @@ const gtmEnv = {
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Bonaparte`,
-    siteUrl: `https://www.bonapartedigital.com`
+    siteUrl: `https://bonapartedigital.com`
   },
   graphqlTypegen: true,
   plugins: [
@@ -71,6 +71,12 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-sitemap',
     },
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en'
+      }
+    }
   ],
 };
 
