@@ -46,4 +46,9 @@ const NotFoundPage: React.FC<PageProps> = () => {
 
 export default NotFoundPage
 
-export const Head: HeadFC = () => <title>Not found</title>
+export const Head: HeadFC = () => (
+  <>
+  <title>Bonaparte | Not Found</title>
+  <meta name="description" content="We're not just a digital marketing agency; we're your strategic partners in world-class branding and digital domination. Forget buzzwords and fluff. We deliver hard-hitting results that last. Ready to conquer?" />
+  </>
+)

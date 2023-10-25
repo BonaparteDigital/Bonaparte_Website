@@ -63,8 +63,8 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.bonapartedigital.com',
-        sitemap: 'https://www.bonapartedigital.com/sitemap-0.xml',
+        host: 'https://bonapartedigital.com',
+        sitemap: 'https://bonapartedigital.com/sitemap-0.xml',
         policy: [{userAgent: '*', allow: '/'}]
       }
     },
