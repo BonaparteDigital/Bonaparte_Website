@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link, HeadFC, PageProps } from "gatsby"
 import Logo from '../images/logo_bonaparte.svg'
-import PFP from '../images/logo_pfp_bonaparte.svg'
 
 const Home: React.FC<PageProps> = () => {
   return (
@@ -57,6 +56,7 @@ export default Home
 
 export const Head: HeadFC = () => (
 <>
+<html lang="en" />
 <title>Bonaparte | Your Digital Strategist</title>
 <meta name="description" content="We're not just a digital marketing agency; we're your strategic partners in world-class branding and digital domination. Forget buzzwords and fluff. We deliver hard-hitting results that last. Ready to conquer?" />
 </>
