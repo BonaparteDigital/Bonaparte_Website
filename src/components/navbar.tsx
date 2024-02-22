@@ -33,7 +33,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
           <div id="header.desktop" className='flex items-center justify-between px-2 py-4'>
             <div id="navbar.left" className="z-50">
-              <Link to="/" ><img src={Logo} alt="Bonaparte" className="h-6"/></Link>
+              <Link to="/" ><img src={Logo} alt="Bonaparte" className="h-6 z-49"/></Link>
             </div>
             <div id="hamburguer.menu" className='md:hidden z-50'>
               <button id="menu" type="button" aria-label="Menu" className='block' onClick={() => setIsOpen(!isOpen)}>
