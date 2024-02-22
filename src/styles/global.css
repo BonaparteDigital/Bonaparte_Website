@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties Definitions */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust this value to match the height of the header/navbar */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Heading Styles */
+
+h1 {
+    font-family: 'Mulish', serif;
+    font-weight: bold;
+    font-size: 2em; /* 32px if base font-size is 16px */
+    margin-bottom: 0.5em;
+  }
+  
+  h2 {
+    font-family: raleway;
+    font-size: 1.75em; /* 28px if base font-size is 16px */
+    font-weight: semi-bold;
+    margin-bottom: 0.5em;
+  }
+  
+  h3 {
+    font-family: raleway;
+    font-size: 1.5em; /* 24px if base font-size is 16px */
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Paragraph Styles */
+  p {
+    font-family: raleway;
+    font-size: 1em; /* 16px if base font-size is 16px */
+    margin-bottom: 1em;
+    line-height: 1.5; /* Adjust line height for readability */
+  } 
+  
+  body {
+    font-family: raleway;
+  }
+
+    /* React Slick Added Styles */
+
+    .slick-dots {
+      left: 0px;
+    }
+
+    .slick-dots li button {
+      color:#14271D !important;
+    }
+
+    .slick-dots li button:before {
+      color:#14271D !important;
+      font-size: 20px !important;
+      line-height: 20px !important;
+  }
+
+    .slick-dots li.slick-active button:before {
+      color:orange !important;
+      font-size: 20px !important;
+      line-height: 20px !important;
+  }
