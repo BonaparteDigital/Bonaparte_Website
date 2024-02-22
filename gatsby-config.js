@@ -9,57 +9,19 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Bonaparte | Your Digital Strategist`,
+    title: `Gatsby Starter Blog`,
     author: {
-      name: `Bonaparte`,
-      summary: `Meet Bonaparte, Your Digital Strategist`,
+      name: `Kyle Mathews`,
+      summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `Meet BONAPARTE—Your Digital Strategist. We're not just a digital marketing agency; we're your strategic partners in world-class branding and digital domination. Forget buzzwords and fluff. We deliver hard-hitting results that last.`,
-    siteUrl: `https://bonapartedigital.com/`,
-    image: "/images/Preview_Image@2x.png",
+    description: `A starter blog demonstrating what Gatsby can do.`,
+    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `bonapartedigital`,
+      twitter: `kylemathews`,
     },
   },
   plugins: [
-    "gatsby-plugin-postcss",
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: "GTM-W2RR2D4M",
-  
-        // Include GTM in development.
-        //
-        // Defaults to false meaning GTM will only be loaded in production.
-        includeInDevelopment: false,
-  
-        // datalayer to be set before GTM is loaded
-        // should be an object or a function that is executed in the browser
-        //
-        // Defaults to null
-        defaultDataLayer: { platform: "gatsby" },
-  
-        // Specify optional GTM environment details.
-        gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-        gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        dataLayerName: "YOUR_DATA_LAYER_NAME",
-  
-        // Name of the event that is triggered
-        // on every Gatsby route change.
-        //
-        // Defaults to gatsby-route-change
-        routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
-        // Defaults to false
-        enableWebVitalsTracking: true,
-        // Defaults to https://www.googletagmanager.com
-        selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
-        // Defaults to gtm.js
-        selfHostedPath: "YOUR_SELF_HOSTED_PATH",
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-sitemap',
-    },
+    'gatsby-plugin-postcss',
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -67,6 +29,14 @@ module.exports = {
         path: `${__dirname}/content/blog`,
         name: `blog`,
       },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/
+        }
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -141,7 +111,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Bonaparte | Your Digital Strategist",
+            title: "Gatsby Starter Blog RSS Feed",
           },
         ],
       },
@@ -149,8 +119,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bonaparte`,
-        short_name: `Bonaparte`,
+        name: `Gatsby Starter Blog`,
+        short_name: `Gatsby`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
