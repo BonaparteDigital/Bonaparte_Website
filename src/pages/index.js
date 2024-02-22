@@ -13,7 +13,7 @@ const HomePage = () => {
   const [effectButtonTwo, setEffectButtonTwo] = useState(false);
   return (
     <Layout title="Bonaparte">
-      <div id="hero" className="h-screen container flex md:flex-row flex-col justify-center items-center text-center px-4 bg-cover bg-center" style={{backgroundImage: "url('path_to_your_background_image.jpg')"}}>
+      <div id="hero" className="h-screen container flex md:flex-row flex-col justify-center items-center text-center px-4 bg-cover bg-center">
         <div id="title" className="md:w-1/2">
           <h1 className="text-9xl md:text-[150px] text-shadow-solid shadow-orange">grow your brand</h1>
         </div>
