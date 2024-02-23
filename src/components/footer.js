@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import IconX from "../assets/icon_x.svg";
-import IconLinkedIn from "../assets/icon_LinkedIn.svg";
-import IconMail from "../assets/icon_Mail.svg";
+import IconLinkedIn from "../assets/icon_linkedin.svg";
+import IconMail from "../assets/icon_mail.svg";
 import Logo from "../assets/logo_bonaparte_white.svg";
 import Subscribe from "./subscribe";
 
