@@ -6,9 +6,9 @@ import "slick-carousel/slick/slick-theme.css";
 import CixStudio from "../assets/client_cix-studio.svg";
 import Agrow from "../assets/client_agrow.svg";
 import Sentrisense from "../assets/client_sentrisense.svg";
-import CixStudioPFP from "../assets/carmen.png";
-import AgrowPFP from "../assets/antonella.png";
-import SentrisensePFP from "../assets/sebastian.png";
+import CixStudioPFP from "../assets/cix-studio_carmen.svg";
+import AgrowPFP from "../assets/agrow_antonella.svg";
+import SentrisensePFP from "../assets/sentrisense_sebastian.svg";
 import QuoteIconL from "../assets/quote_icon_L.svg";
 
 const testimonial = [

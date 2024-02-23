@@ -15,7 +15,7 @@ const NotFoundPage = ({ data, location }) => {
   )
 }
 
-export const Head = () => <Seo title="404: Not Found" />
+export const Head = () => <Seo title="Bonaparte | 404: Not Found" />
 
 export default NotFoundPage
 

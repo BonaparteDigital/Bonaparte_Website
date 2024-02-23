@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import IconX from "../assets/icon_x.svg";
-import IconLinkedIn from "../assets/icon_LinkedIn.svg";
-import IconMail from "../assets/icon_Mail.svg";
-import Logo from '../assets/logo_bonaparte_white.svg';
+import Logo from "../assets/logo_bonaparte_white.svg";
 import Subscribe from "./subscribe";
 
 const Footer = () => {
@@ -11,13 +8,13 @@ const Footer = () => {
     <footer className="bg-green text-olive-light p-5">
         <div id="footer_content_mobile" className="md:hidden flex flex-col">
           <div className="mx-auto mt-4">
-            <Link to="/" ><img src={Logo} alt="Bonaparte" className="h-5" /></Link>
+            <Link to="/"><Logo className="h-5" alt="Bonaparte" /></Link>
           </div>
           <div className="my-8 border-t border-olive"></div> {/* Horizontal line */}
           <div id="socialmedia_icons_mobile" className="flex justify-center space-x-6 mb-8">
-            <Link to="https://x.com/bonapartedigital" ><img src={IconX} alt="X"/></Link>
-            <Link to="https://www.linkedin.com/bonapartedigital" ><img src={IconLinkedIn} alt="LinkedIn"/></Link>
-            <Link to="mailto:hello@bonapartedigital.com" ><img src={IconMail} alt="Mail"/></Link>
+            <Link to="https://x.com/bonapartedigital" >{/*<IconX className="h-5" alt="X" />*/}</Link>
+            <Link to="https://www.linkedin.com/bonapartedigital" >{/*<IconLinkedIn className="h-5" alt="LinkedIn" />*/}</Link>
+            <Link to="mailto:hello@bonapartedigital.com" >{/*<IconMail className="h-5" alt="email" />*/}</Link>
           </div>
           <div id="copyright" className="text-center">
             <p>© {new Date().getFullYear()} BONAPARTE | All Rights Reserved | <Link to="/privacy-policy">Privacy Policy</Link></p>
@@ -26,7 +23,7 @@ const Footer = () => {
         <div id="footer_content_desktop" className="hidden md:flex md:flex-col mx-auto px-4">
           <div id="upper-footer" className="flex container max-w-screen-xl px-10 md:mt-6">
             <div className="w-1/3">
-              <Link to="/" ><img src={Logo} alt="Bonaparte" className="h-6 mb-4" /></Link>
+              <Link to="/"><Logo className="h-5" alt="Bonaparte" /></Link>
               <p>We're not just a digital marketing agency; we're your strategic partners in world-class branding and digital domination.</p>
               </div>
             <div className="w-1/3 text-center">
@@ -48,9 +45,9 @@ const Footer = () => {
              {/*<Link to="/insights" className="px-4 hover:text-olive">Insights</Link> */}
             </div>
             <div id="socialmedia_icons" className="flex space-x-6">
-              <Link to="https://x.com/bonapartedigital" ><img src={IconX} alt="X"/></Link>
-              <Link to="https://www.linkedin.com/bonapartedigital" ><img src={IconLinkedIn} alt="LinkedIn"/></Link>
-              <Link to="mailto:hello@bonapartedigital.com" ><img src={IconMail} alt="Mail"/></Link>
+            <Link to="https://x.com/bonapartedigital" >{/*<IconX className="h-5" alt="X" />*/}</Link>
+            <Link to="https://www.linkedin.com/bonapartedigital" >{/*<IconLinkedIn className="h-5" alt="LinkedIn" />*/}</Link>
+            <Link to="mailto:hello@bonapartedigital.com" >{/*<IconMail className="h-5" alt="email" />*/}</Link>
             </div>
           </div>
         </div>
