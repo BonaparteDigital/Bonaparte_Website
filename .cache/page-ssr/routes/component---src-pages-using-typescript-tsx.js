@@ -17,7 +17,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3524);
 /* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7528);
 // If you don't want to use TypeScript you can delete this file!
-const UsingTypescript=({data,path,location})=>/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A,{title:"Using TypeScript",location:location},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1",null,"Gatsby supports TypeScript by default!"),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p",null,"This means that you can create and write ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("code",null,".ts/.tsx")," files for your pages, components, and ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("code",null,"gatsby-*")," configuration files (for example ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("code",null,"gatsby-config.ts"),")."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p",null,"For type checking you'll want to install ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em",null,"typescript")," via npm and run ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em",null,"tsc --init")," to create a ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em",null,"tsconfig")," file."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p",null,"You're currently on the page \"",path,"\" which was built on"," ",data.site.buildTime,"."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p",null,"To learn more, head over to our"," ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a",{href:"https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/"},"documentation about TypeScript"),"."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link,{to:"/"},"Go back to the homepage"));const Head=()=>/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A,{title:"Using TypeScript"});/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UsingTypescript);const query="2907560070";
+
+
+
+
+const UsingTypescript = ({
+  data,
+  path,
+  location
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+  title: "Using TypeScript",
+  location: location
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Gatsby supports TypeScript by default!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "This means that you can create and write ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("code", null, ".ts/.tsx"), " files for your pages, components, and ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("code", null, "gatsby-*"), " configuration files (for example ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("code", null, "gatsby-config.ts"), ")."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "For type checking you'll want to install ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "typescript"), " via npm and run ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "tsc --init"), " to create a ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "tsconfig"), " file."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "You're currently on the page \"", path, "\" which was built on", " ", data.site.buildTime, "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "To learn more, head over to our", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+  href: "https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/"
+}, "documentation about TypeScript"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  to: "/"
+}, "Go back to the homepage"));
+const Head = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
+  title: "Using TypeScript"
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UsingTypescript);
+const query = "2907560070";
 
 /***/ }),
 

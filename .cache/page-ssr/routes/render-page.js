@@ -1844,7 +1844,7 @@ function getForwards(collectedScripts) {
 /***/ 6877:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-exports.components={"component---src-pages-404-js":()=>__webpack_require__.e(/* import() | component---src-pages-404-js */ 125).then(__webpack_require__.bind(__webpack_require__, 3331)),"component---src-pages-index-js":()=>__webpack_require__.e(/* import() | component---src-pages-index-js */ 293).then(__webpack_require__.bind(__webpack_require__, 9639)),"component---src-pages-insights-js":()=>Promise.all(/* import() | component---src-pages-insights-js */[__webpack_require__.e(75), __webpack_require__.e(310)]).then(__webpack_require__.bind(__webpack_require__, 1850)),"component---src-pages-using-typescript-tsx":()=>__webpack_require__.e(/* import() | component---src-pages-using-typescript-tsx */ 743).then(__webpack_require__.bind(__webpack_require__, 3479)),"component---src-templates-blog-post-js":()=>Promise.all(/* import() | component---src-templates-blog-post-js */[__webpack_require__.e(75), __webpack_require__.e(751)]).then(__webpack_require__.bind(__webpack_require__, 6093))};
+exports.components={"component---src-pages-404-js":()=>__webpack_require__.e(/* import() | component---src-pages-404-js */ 125).then(__webpack_require__.bind(__webpack_require__, 3331)),"component---src-pages-index-js":()=>__webpack_require__.e(/* import() | component---src-pages-index-js */ 293).then(__webpack_require__.bind(__webpack_require__, 9639)),"component---src-pages-using-typescript-tsx":()=>__webpack_require__.e(/* import() | component---src-pages-using-typescript-tsx */ 743).then(__webpack_require__.bind(__webpack_require__, 3479))};
 
 /***/ }),
 
@@ -1857,7 +1857,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   apiRunner: () => (/* binding */ apiRunner),
 /* harmony export */   apiRunnerAsync: () => (/* binding */ apiRunnerAsync)
 /* harmony export */ });
-var plugins=[{name:'gatsby-plugin-sitemap',plugin:__webpack_require__(9672),options:{"plugins":[],"output":"/","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]}},{name:'gatsby-plugin-google-tagmanager',plugin:__webpack_require__(6026),options:{"plugins":[],"id":"GTM-W2RR2D4M","includeInDevelopment":false,"defaultDataLayer":{"type":"object","value":{"platform":"gatsby"}},"gtmAuth":"YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING","gtmPreview":"YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME","dataLayerName":"YOUR_DATA_LAYER_NAME","routeChangeEventName":"YOUR_ROUTE_CHANGE_EVENT_NAME","enableWebVitalsTracking":true,"selfHostedOrigin":"YOUR_SELF_HOSTED_ORIGIN","selfHostedPath":"YOUR_SELF_HOSTED_PATH"}},{name:'gatsby-plugin-image',plugin:__webpack_require__(70),options:{"plugins":[]}},{name:'gatsby-plugin-feed',plugin:__webpack_require__(2585),options:{"plugins":[],"query":"\n          {\n            site {\n              siteMetadata {\n                title\n                description\n                siteUrl\n                site_url: siteUrl\n              }\n            }\n          }\n        ","feeds":[{"query":"{\n              allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {\n                nodes {\n                  excerpt\n                  html\n                  fields {\n                    slug\n                  }\n                  frontmatter {\n                    title\n                    date\n                  }\n                }\n              }\n            }","output":"/rss.xml","title":"Gatsby Starter Blog RSS Feed"}]}},{name:'gatsby-plugin-manifest',plugin:__webpack_require__(4858),options:{"plugins":[],"name":"Gatsby Starter Blog","short_name":"Gatsby","start_url":"/","background_color":"#ffffff","display":"minimal-ui","icon":"src/images/gatsby-icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"4a9773549091c227cd2eb82ccd9c5e3a"}},{name:'default-site-plugin',plugin:__webpack_require__(5328),options:{"plugins":[]}},{name:'partytown',plugin:__webpack_require__(387),options:{"plugins":[]}}];/* global plugins */ // During bootstrap, we write requires at top of this file which looks like:
+var plugins=[{name:'gatsby-plugin-sitemap',plugin:__webpack_require__(9672),options:{"plugins":[],"output":"/","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]}},{name:'gatsby-plugin-google-tagmanager',plugin:__webpack_require__(6026),options:{"plugins":[],"id":"GTM-W2RR2D4M","includeInDevelopment":false,"defaultDataLayer":{"type":"object","value":{"platform":"gatsby"}},"gtmAuth":"YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING","gtmPreview":"YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME","dataLayerName":"YOUR_DATA_LAYER_NAME","routeChangeEventName":"YOUR_ROUTE_CHANGE_EVENT_NAME","enableWebVitalsTracking":true,"selfHostedOrigin":"YOUR_SELF_HOSTED_ORIGIN","selfHostedPath":"YOUR_SELF_HOSTED_PATH"}},{name:'gatsby-plugin-image',plugin:__webpack_require__(70),options:{"plugins":[]}},{name:'gatsby-plugin-manifest',plugin:__webpack_require__(4858),options:{"plugins":[],"name":"Gatsby Starter Blog","short_name":"Gatsby","start_url":"/","background_color":"#ffffff","display":"minimal-ui","icon":"src/images/gatsby-icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"4a9773549091c227cd2eb82ccd9c5e3a"}},{name:'default-site-plugin',plugin:__webpack_require__(5328),options:{"plugins":[]}},{name:'partytown',plugin:__webpack_require__(387),options:{"plugins":[]}}];/* global plugins */ // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
 //     plugin: require("/path/to/plugin1/gatsby-ssr.js"),
@@ -2624,28 +2624,6 @@ contents.push(children);contents.push(/*#__PURE__*/react__WEBPACK_IMPORTED_MODUL
  */ /**
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
  */exports.onRenderBody=({setHtmlAttributes})=>{setHtmlAttributes({lang:`en`});};
-
-/***/ }),
-
-/***/ 2585:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-var _interopRequireDefault=__webpack_require__(4994);var _extends2=_interopRequireDefault(__webpack_require__(4634));var _react=_interopRequireDefault(__webpack_require__(5276));var _gatsby=__webpack_require__(123);var _internals=__webpack_require__(20);// TODO: remove for v3
-var withPrefix=_gatsby.withAssetPrefix||_gatsby.withPrefix;exports.onRenderBody=function(_ref,pluginOptions){var setHeadComponents=_ref.setHeadComponents,pathname=_ref.pathname;var _defaultOptions$plugi=(0,_extends2.default)({},_internals.defaultOptions,pluginOptions),feeds=_defaultOptions$plugi.feeds;var links=feeds.filter(function(_ref2){var match=_ref2.match;if(typeof match==="string")return new RegExp(match).exec(pathname);return true;}).map(function(_ref3,i){var output=_ref3.output,title=_ref3.title,link=_ref3.link;var href=link||withPrefix(output.replace(/^\/?/,"/"));return/*#__PURE__*/_react.default.createElement("link",{key:"gatsby-plugin-feed-"+i,rel:"alternate",type:"application/rss+xml",title:title,href:href});});setHeadComponents(links);};
-
-/***/ }),
-
-/***/ 20:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-var _interopRequireDefault=__webpack_require__(4994);exports.__esModule=true;exports.runQuery=exports.defaultOptions=void 0;var _extends2=_interopRequireDefault(__webpack_require__(4634));var _objectWithoutPropertiesLoose2=_interopRequireDefault(__webpack_require__(4893));var _excluded=["query"];var runQuery=function runQuery(handler,query){return handler(query).then(function(r){if(r.errors){throw new Error(r.errors.join(", "));}return r.data;});};exports.runQuery=runQuery;var defaultOptions={// Override if you want to manually specify the RSS "generator" tag.
-generator:"GatsbyJS",// Run a default query to gather some information about the site.
-query:"\n    {\n      site {\n        siteMetadata {\n          title\n          description\n          siteUrl\n          site_url: siteUrl\n        }\n      }\n    }\n  ",// Setup an RSS object, merging on various feed-specific options.
-setup:function setup(_ref){var siteMetadata=_ref.query.site.siteMetadata,rest=(0,_objectWithoutPropertiesLoose2.default)(_ref,_excluded);return(0,_extends2.default)({},siteMetadata,rest);},// Create a default RSS feed. Others may be added by using the format below.
-feeds:[{query:"\n      {\n        allMarkdownRemark(\n          limit: 1000,\n          sort: {\n            order: DESC,\n            fields: [frontmatter___date]\n          }\n        ) {\n          edges {\n            node {\n              frontmatter {\n                title\n                date\n              }\n              fields {\n                slug\n              }\n              excerpt\n              html\n            }\n          }\n        }\n      }\n    ",// Where we will save the feed generated by this query.
-output:"rss.xml"}]};exports.defaultOptions=defaultOptions;
 
 /***/ }),
 
@@ -8473,7 +8451,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-var decode_json_1 = __importDefault(__webpack_require__(7274));
+var decode_json_1 = __importDefault(__webpack_require__(4893));
 // Adapted from https://github.com/mathiasbynens/he/blob/master/src/he.js#L94-L119
 var fromCodePoint = 
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
@@ -10082,27 +10060,6 @@ module.exports = _assertThisInitialized, module.exports.__esModule = true, modul
 
 /***/ }),
 
-/***/ 4634:
-/***/ ((module) => {
-
-function _extends() {
-  module.exports = _extends = Object.assign ? Object.assign.bind() : function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-    return target;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  return _extends.apply(this, arguments);
-}
-module.exports = _extends, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
 /***/ 6221:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -10125,25 +10082,6 @@ function _interopRequireDefault(obj) {
   };
 }
 module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 4893:
-/***/ ((module) => {
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-  return target;
-}
-module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 
@@ -10292,7 +10230,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"gatsby","description":"Blazin
 
 /***/ }),
 
-/***/ 7274:
+/***/ 4893:
 /***/ ((module) => {
 
 "use strict";
@@ -10429,7 +10367,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"amp":"&","apos":"\'","gt":">","lt":"
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + ({"125":"component---src-pages-404-js","293":"component---src-pages-index-js","310":"component---src-pages-insights-js","743":"component---src-pages-using-typescript-tsx","751":"component---src-templates-blog-post-js"}[chunkId] || chunkId) + ".js";
+/******/ 			return "" + {"125":"component---src-pages-404-js","293":"component---src-pages-index-js","743":"component---src-pages-using-typescript-tsx"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	

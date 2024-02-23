@@ -1,4 +1,4 @@
-### Type definitions saved at 2024-02-23T00:49:57.005Z ###
+### Type definitions saved at 2024-02-23T01:43:09.857Z ###
 
 enum RemoteFileFit {
   COVER
@@ -266,13 +266,13 @@ type Site implements Node @dontInfer {
   graphqlTypegen: Boolean
 }
 
-type SiteSiteMetadata {
+type SiteSiteMetadata @derivedTypes {
   title: String
   description: String
-  author: Author
+  author: SiteSiteMetadataAuthor
   siteUrl: String
-  social: Social
   image: String
+  social: SiteSiteMetadataSocial
 }
 
 type SiteFunction implements Node @dontInfer {
@@ -360,9 +360,8 @@ type MarkdownWordCount {
   words: Int
 }
 
-type MarkdownRemark implements Node @childOf(mimeTypes: ["text/markdown", "text/x-markdown"], types: ["File"]) @dontInfer {
-  frontmatter: Frontmatter
-  fields: Fields
+type MarkdownRemark implements Node @childOf(mimeTypes: ["text/markdown", "text/x-markdown"], types: ["File"]) @derivedTypes @dontInfer {
+  frontmatter: MarkdownRemarkFrontmatter
   excerpt: String
   rawMarkdownBody: String
   fileAbsolutePath: String
@@ -671,21 +670,17 @@ type ImageSharp implements Node @childOf(types: ["File"]) @dontInfer {
   resize(width: Int, height: Int, quality: Int, jpegQuality: Int, pngQuality: Int, webpQuality: Int, jpegProgressive: Boolean = true, pngCompressionLevel: Int = 9, pngCompressionSpeed: Int = 4, grayscale: Boolean, duotone: DuotoneGradient, base64: Boolean, traceSVG: Potrace, toFormat: ImageFormat, cropFocus: ImageCropFocus = ATTENTION, fit: ImageFit = COVER, background: String = "rgba(0,0,0,1)", rotate: Int, trim: Float): ImageSharpResize
 }
 
-type Author {
+type SiteSiteMetadataAuthor {
   name: String
   summary: String
 }
 
-type Social {
+type SiteSiteMetadataSocial {
   twitter: String
 }
 
-type Frontmatter {
+type MarkdownRemarkFrontmatter {
   title: String
-  description: String
   date: Date @dateformat
-}
-
-type Fields {
-  slug: String
+  description: String
 }

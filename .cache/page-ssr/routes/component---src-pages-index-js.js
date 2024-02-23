@@ -45,7 +45,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5276);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3524);
-const Home=()=>{const{0:effectButtonOne,1:setEffectButtonOne}=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);const{0:effectButtonTwo,1:setEffectButtonTwo}=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A,null);};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);const Head=()=>/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment),null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title",null,"Bonaparte | Your Digital Strategist"),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("link",{as:"font",crossorigin:"anonymous",href:"/fonts/Mulish.woff2",rel:"preload",type:"font/woff2"}));
+
+
+const Home = () => {
+  const {
+    0: effectButtonOne,
+    1: setEffectButtonOne
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const {
+    0: effectButtonTwo,
+    1: setEffectButtonTwo
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, null);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
+const Head = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "Bonaparte | Your Digital Strategist"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("link", {
+  as: "font",
+  crossorigin: "anonymous",
+  href: "/fonts/Mulish.woff2",
+  rel: "preload",
+  type: "font/woff2"
+}));
 
 /***/ }),
 
