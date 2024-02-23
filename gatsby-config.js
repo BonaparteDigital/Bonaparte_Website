@@ -22,7 +22,8 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
     'gatsby-plugin-postcss',
     {
       resolve: "gatsby-plugin-google-tagmanager",
