@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "bonaparte-website",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
@@ -8,7 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@fontsource-variable/montserrat": "^5.0.17",
+    "@fontsource/mulish": "^5.0.16",
     "@fontsource/raleway": "^5.0.16",
     "gatsby": "^5.13.3",
     "gatsby-plugin-google-tagmanager": "^5.13.1",

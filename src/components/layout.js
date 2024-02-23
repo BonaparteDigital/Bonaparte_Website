@@ -1,13 +1,16 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import Footer from "./footer"
+import NavBar from "../components/navbar"
+import Footer from "../components/footer"
 
 const Layout = ({ title, children }) => {
   return (
-    <div className="global-wrapper">
-      <header className="global-header"></header>
+    <div id="global-wrapper" className="bg-olive">
+      <header id="global-header">
+        <NavBar />
+      </header>
+      <div className="container mx-auto"></div>
       <main>{children}</main>
-      <Footer/>
+        <Footer />
     </div>
   )
 }

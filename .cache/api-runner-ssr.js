@@ -13,7 +13,7 @@ var plugins = [{
     },{
       name: 'gatsby-plugin-manifest',
       plugin: require('/Users/guidorossetti/Desktop/Work/Bonaparte/Web/Bonaparte_Website/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
-      options: {"plugins":[],"name":"Gatsby Starter Blog","short_name":"Gatsby","start_url":"/","background_color":"#ffffff","display":"minimal-ui","icon":"src/images/gatsby-icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"4a9773549091c227cd2eb82ccd9c5e3a"},
+      options: {"plugins":[],"name":"Bonaparte | Digital Strategist","short_name":"Bonaparte","start_url":"/","background_color":"#ffffff","display":"minimal-ui","icon":"src/images/Bonaparte_PFP.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"9663478629f9b29d75ecd4d87b5ec976"},
     },{
       name: 'default-site-plugin',
       plugin: require('/Users/guidorossetti/Desktop/Work/Bonaparte/Web/Bonaparte_Website/gatsby-ssr.js'),
