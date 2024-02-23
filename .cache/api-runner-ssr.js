@@ -1,4 +1,12 @@
 var plugins = [{
+      name: 'gatsby-plugin-sitemap',
+      plugin: require('/Users/guidorossetti/Desktop/Work/Bonaparte/Web/Bonaparte_Website/node_modules/gatsby-plugin-sitemap/gatsby-ssr.js'),
+      options: {"plugins":[],"output":"/","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]},
+    },{
+      name: 'gatsby-plugin-google-tagmanager',
+      plugin: require('/Users/guidorossetti/Desktop/Work/Bonaparte/Web/Bonaparte_Website/node_modules/gatsby-plugin-google-tagmanager/gatsby-ssr.js'),
+      options: {"plugins":[],"id":"GTM-W2RR2D4M","includeInDevelopment":false,"defaultDataLayer":{"type":"object","value":{"platform":"gatsby"}},"gtmAuth":"YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING","gtmPreview":"YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME","dataLayerName":"YOUR_DATA_LAYER_NAME","routeChangeEventName":"YOUR_ROUTE_CHANGE_EVENT_NAME","enableWebVitalsTracking":true,"selfHostedOrigin":"YOUR_SELF_HOSTED_ORIGIN","selfHostedPath":"YOUR_SELF_HOSTED_PATH"},
+    },{
       name: 'gatsby-plugin-image',
       plugin: require('/Users/guidorossetti/Desktop/Work/Bonaparte/Web/Bonaparte_Website/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
